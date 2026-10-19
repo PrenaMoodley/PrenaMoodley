@@ -12,6 +12,7 @@ ordinary, tested code does the calculations.
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**backoffice-copilot**](https://github.com/PrenaMoodley/backoffice-copilot) | A hotel finance team's morning checks on one dashboard (room charges POS → PMS, card clearing, duplicate invoices, ad spend), with a Claude copilot that investigates anything red and asks before it changes anything. Includes an evaluation set and a no-cost demo mode | Python · Claude API · MCP server and client · FastAPI · SSE · evals |
 | [**po-intake-ai**](https://github.com/PrenaMoodley/po-intake-ai) | Reads customer purchase orders (PDF, email, text), matches them to customers and products, checks totals and VAT, and outputs an Excel review workbook | Python · Claude API (tool use, structured outputs, Batch API, prompt caching) · openpyxl |
 | [**erp-mcp-server**](https://github.com/PrenaMoodley/erp-mcp-server) | Lets Claude answer "where is this order and do we have the stock?" from a live ERP database through read-only MCP tools | Python · MCP · PostgreSQL · SQLAlchemy |
 | [**recon-dashboard**](https://github.com/PrenaMoodley/recon-dashboard) | Matches bank receipts to invoices, with signed webhooks, a review queue for exceptions and an Excel export | FastAPI · PostgreSQL · Next.js · TypeScript |
